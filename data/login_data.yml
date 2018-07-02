@@ -27,3 +27,12 @@ test_login:
     username: "12303080305"
     password: "123000"
     expect: "账号不存在"
+
+
+#test_login_miss_part:
+#  test_login_miss_part_001:
+#    username: "18503080305"
+#    password: ""
+#  test_login_miss_part_002:
+#    username: ""
+#    password: "123000"
