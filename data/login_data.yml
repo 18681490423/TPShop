@@ -1,0 +1,29 @@
+test_login:
+  test_login_001:
+    username: "18503080305"
+    password: "123000"
+    expect: "登录成功"
+  test_login_002:
+    username: "18503080305"
+    password: "123xxxx"
+    expect: "密码错误"
+  test_login_003:
+    username: "18503080305 "
+    password: "123000"
+    expect: "登录成功"
+  test_login_004:
+    username: " 18503080305"
+    password: "123000"
+    expect: "账号不存在"
+  test_login_005:
+    username: "185030803051"
+    password: "123000"
+    expect: "账号不存在"
+  test_login_006:
+    username: "1850308030"
+    password: "123000"
+    expect: "账号不存在"
+  test_login_007:
+    username: "12303080305"
+    password: "123000"
+    expect: "账号不存在"

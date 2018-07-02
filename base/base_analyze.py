@@ -12,7 +12,7 @@ def analyze_data(key):
 
     print(file_name)
 
-    with open("./data/" + file_name + ".yml", 'r') as f:
+    with open("./data/" + file_name + ".yml", 'r', encoding="utf-8") as f:
         data = yaml.load(f)
         script_data = data[key]
         script_list = list()
